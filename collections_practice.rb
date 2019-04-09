@@ -50,9 +50,8 @@ end
 def find_cool(array)
   cool= []
   array.each do |val|
-   if  val == "cool"
-    cool.push(val)
-    end
+    val == "cool"
+    cool << val
   end
   cool
 end
