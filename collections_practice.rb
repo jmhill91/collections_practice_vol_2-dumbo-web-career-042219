@@ -49,8 +49,10 @@ end
 
 def find_cool(array)
  array.select do |elem|
-   
-  
+   if elem.has_value?("cool")
+     elem
+   end
+ end
 end
 
 def organize_schools(schools)
