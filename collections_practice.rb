@@ -52,7 +52,7 @@ def find_cool(array)
   array.each do |val|
    if  val == "cool"
     cool.push(val)
-  end
+    end
   end
   cool
 end
