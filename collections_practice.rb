@@ -45,7 +45,7 @@ end
 def merge_data(keys, data)
   keys.each do |index|
     data.each do |newInfo|
-      
+      index.merge!()
  
 end
 
