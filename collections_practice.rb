@@ -43,7 +43,8 @@ def count_elements(array)
 end
 
 def merge_data(keys, data)
- mergedHash= {}
+  keys.each do |index|
+    
  
 end
 
