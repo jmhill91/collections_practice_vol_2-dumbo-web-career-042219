@@ -43,17 +43,19 @@ def count_elements(array)
 end
 
 def merge_data(keys, data)
- mergedHash= {}
- 
+  keys.each do |index|
+    data.each do |newInfo|
+      index.merge!(newInfo[index[:first_name]])
+    end
+  end
 end
 
 def find_cool(array)
-  cool= []
-  array.each do |val|
-    val == "cool"
-    cool =val
-  end
-  cool
+ array.select do |elem|
+   if elem.has_value?("cool")
+     elem
+   end
+ end
 end
 
 def organize_schools(schools)
