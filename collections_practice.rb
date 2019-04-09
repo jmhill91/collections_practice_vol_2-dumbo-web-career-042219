@@ -48,13 +48,9 @@ def merge_data(keys, data)
 end
 
 def find_cool(array)
-  cool= []
-  array.each do |key, val|
-    if key[:temperature] == "cool"
-    cool << val
-    end
-  end
-  cool
+ array.select do |elem|
+   
+  
 end
 
 def organize_schools(schools)
