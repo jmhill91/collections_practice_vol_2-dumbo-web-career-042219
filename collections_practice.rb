@@ -45,7 +45,7 @@ end
 def merge_data(keys, data)
   keys.each do |index|
     data.each do |newInfo|
-      index.merge!(newInfo[index[]])
+      index.merge!(newInfo[index[:first_name]])
  
 end
 
